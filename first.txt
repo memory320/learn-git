@@ -1,0 +1,27 @@
+PWD：用于显示当前目录
+ 
+git init 命令 可以把这个目录变成git可以管理的仓库
+把文件添加到仓库：git add readme.txt
+ 
+"执行上面的命令，没有任何显示，这就对了，Unix的哲学是“没有消息就是好消息”，说明添加成功"
+Git commit 把文件提交到仓库
+ 
+-m 后面输入的是本次提交的说明
+1 file changed ：一个文件被改动
+0 insetions:
+0 deletions:
+为什么有 add commit 2步，因为可以add很多次， commit一次
+git status
+ 
+Git status 用于展示当前仓库状态
+“是不是有已经修改过但是没有备提交的内容”
+git diff : 可以展示具体修改了啥
+ 
+Diff 之后就可以再提交到仓库 ADD
+ 
+要随时掌握工作区的状态，使用git status命令，如果git status告诉你有文件被修改过，可以用git diff查看修改内容
+每当你觉得文件修改到一定程度时，就可以“保存一个快照”，这个“快照”在git中被称为Commit，一旦你把文件改乱了，或者是误删了文件，还可以从最近的一个Commit恢复，然后继续工作，而不是把这段时间的工作成果全部丢失
+
+git有命令可以告诉我们的历史记录，在git中，我们用Log命令查看 
+ 
+Log 命令显示从最近到最远的提交记录
